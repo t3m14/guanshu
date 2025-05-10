@@ -59,9 +59,12 @@ LOGOUT_REDIRECT_URL = 'home'
 #     'accounts.auth.EmailAuthBackend',
 # ]
 # Статические файлы
-STATIC_URL = "/static"
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 WHITENOISE_INDEX_FILE = True  # Разрешить обслуживание index.html
 WHITENOISE_STATIC_PREFIX = '/static/'  # Явно указать префикс
 # Media files
@@ -145,7 +148,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
