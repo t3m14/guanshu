@@ -3,7 +3,7 @@ version: '3.8'
 services:
   web:
     build: .
-    command: gunicorn guan_shu.wsgi:application --bind 0.0.0.0:8000
+    command:  command: bash -c "python manage.py collectstatic --noinput && gunicorn guan_shu.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - .:/app
     ports:
