@@ -4,6 +4,7 @@ from django.urls import path
 from accounts import views as accounts_views
 from markets import views as markets_views
 from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
