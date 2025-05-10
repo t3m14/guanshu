@@ -22,4 +22,4 @@ services:
       - web
 
 volumes:
-  static_volume: ./staticfiles:./staticfiles
+  static_volume:
