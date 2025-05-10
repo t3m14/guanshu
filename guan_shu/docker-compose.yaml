@@ -6,20 +6,7 @@ services:
     command: bash -c "python manage.py collectstatic --noinput && gunicorn guan_shu.wsgi:application --bind 0.0.0.0:8000"
     volumes:
       - .:/app
-      - static_volume:/app/staticfiles
     ports:
       - "8000:8000"
     environment:
       - DJANGO_SETTINGS_MODULE=guan_shu.settings
-
-  nginx:
-    build: ./nginx
-    volumes:
-      - static_volume:/usr/share/nginx/html/static
-    ports:
-      - "80:80"
-    depends_on:
-      - web
-
-volumes:
-  static_volume:
