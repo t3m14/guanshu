@@ -62,6 +62,8 @@ LOGOUT_REDIRECT_URL = 'home'
 STATIC_URL = "/static"
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+WHITENOISE_INDEX_FILE = True  # Разрешить обслуживание index.html
+WHITENOISE_STATIC_PREFIX = '/static/'  # Явно указать префикс
 # Media files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
