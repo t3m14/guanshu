@@ -19,3 +19,6 @@ def market_list(request):
 def market_detail(request, pk):
     market = get_object_or_404(Market, pk=pk)
     return render(request, 'market_detail.html', {'market': market})
+
+def multiversex(request):
+    return render(request, 'multiversex.html')

@@ -13,6 +13,7 @@ urlpatterns = [
     path('accounts/register/', accounts_views.register_view, name='register'),
     path('accounts/login/', accounts_views.login_view, name='login'),
     path('accounts/logout/', accounts_views.logout_view, name='logout'),
+    path('multiversex/', markets_views.multiversex, name='multiversex'),
 ]
 
 if settings.DEBUG:
