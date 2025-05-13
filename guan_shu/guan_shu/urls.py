@@ -14,7 +14,7 @@ urlpatterns = [
     path('accounts/login/', accounts_views.login_view, name='login'),
     path('accounts/logout/', accounts_views.logout_view, name='logout'),
     path('metalinx/', markets_views.multiversex, name='multiversex'),
-    path('explorer_metalinx', markets_views.explorer_solana, name='explorer_solana'),
+    path('explorer_metalinx/', markets_views.explorer_solana, name='explorer_solana'),
 ]
 
 if settings.DEBUG:
