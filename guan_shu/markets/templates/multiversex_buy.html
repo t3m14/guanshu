@@ -1,0 +1,276 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetalinX Buy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .step-circle {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: #00ffcc;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .buy-now-btn {
+            background-color: transparent;
+            border: 1px solid #00ffcc;
+            color: #00ffcc;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .divider {
+            height: 1px;
+            background-color: #333;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="flex justify-between items-center p-4 bg-[#1a1a1a]">
+        <div class="flex items-center">
+            <span class="text-white font-bold text-xl">Metal</span>
+            <span class="text-[#00ffcc] font-bold text-xl">in</span>
+            <span class="text-white font-bold text-xl">X</span>
+            <span class="text-white font-bold text-xl">Buy</span>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="text-center mb-6">
+            <h1 class="text-3xl text-[#00ffcc] font-bold">Welcome to MetalinX!</h1>
+            <p class="text-gray-300 mt-2">Purchase eGold using one of the options below.</p>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-8">
+            <!-- Left Column -->
+            <div class="w-full md:w-1/3 space-y-6">
+                <div>
+                    <p class="text-gray-300 mb-4">Here are the key steps to buying MTLx:</p>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="step-circle">1</div>
+                    <div>
+                        <h3 class="font-bold">Get a wallet</h3>
+                        <p class="text-sm text-gray-400">Before buying you need a MetalinX address. You can create a MetalinX wallet and address at <a href="https://wallet.metalinx.com" class="text-[#00ffcc]">https://wallet.metalinx.com</a>.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="step-circle">2</div>
+                    <div>
+                        <h3 class="font-bold">Purchase MTLx</h3>
+                        <p class="text-sm text-gray-400">You can easily purchase MTLx with a card or bank transfer.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="step-circle">3</div>
+                    <div>
+                        <h3 class="font-bold">Stake your MTLx</h3>
+                        <p class="text-sm text-gray-400">Earn ~6-8% average APR by staking and securing the MetalinX network.</p>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <p class="text-gray-300 mb-2">Where are you from?</p>
+                    <div class="relative">
+                        <select class="w-full bg-transparent border border-[#00ffcc] text-white p-2 rounded appearance-none">
+                            <option>Other</option>
+                        </select>
+                        <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                            <svg class="w-4 h-4 text-[#00ffcc]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6">
+                    <p class="text-gray-300 mb-4">How will you purchase?</p>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="byCard" class="w-4 h-4 bg-transparent border-[#00ffcc]" checked>
+                            <label for="byCard" class="ml-2 text-white">By card</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="bankTransfer" class="w-4 h-4 bg-transparent border-[#00ffcc]" checked>
+                            <label for="bankTransfer" class="ml-2 text-white">With a Bank Transfer</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="w-full md:w-2/3">
+                <div class="mb-4">
+                    <p class="text-gray-300">Based on your input, we recommend:</p>
+                </div>
+
+                <!-- Transak -->
+                <div class="bg-[#1a1a1a] rounded-lg p-4 mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Transak</h3>
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                    <p class="text-sm text-gray-400">Card Fees: 3.35% (15 minutes delivery time)</p>
+                    <p class="text-sm text-gray-400">Bank Transfers Fees: 1% (1-2 business days)</p>
+                    <div class="mt-3">
+                        <img src="https://placehold.co/100x30/1a1a1a/00aaff?text=Transak" alt="Transak logo with blue color scheme" class="h-8">
+                    </div>
+                </div>
+
+                <!-- Guardarian -->
+                <div class="bg-[#1a1a1a] rounded-lg p-4 mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Guardarian</h3>
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                    <p class="text-sm text-gray-400">Card Fees: 2.64% + 1.50 USD (5-10 minutes delivery time)</p>
+                    <p class="text-sm text-gray-400">Bank Transfers Fees: 0% + 2.49 USD (1-3 business days)</p>
+                    <div class="mt-3">
+                        <img src="https://placehold.co/100x30/1a1a1a/ffffff?text=GUARDARIAN" alt="Guardarian logo in white text" class="h-8">
+                    </div>
+                </div>
+
+                <!-- Moonpay -->
+                <div class="bg-[#1a1a1a] rounded-lg p-4 mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Moonpay</h3>
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                    <p class="text-sm text-gray-400">Card Fees: 3.5% (2-5 minutes delivery time)</p>
+                    <p class="text-sm text-gray-400">Bank Transfers Fees: 1% (1-2 business days)</p>
+                    <div class="mt-3">
+                        <img src="https://placehold.co/100x30/1a1a1a/ffffff?text=MoonPay" alt="MoonPay logo in white text" class="h-8">
+                    </div>
+                </div>
+
+                <!-- Ramp Network -->
+                <div class="bg-[#1a1a1a] rounded-lg p-4 mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Ramp Network</h3>
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                    <p class="text-sm text-gray-400">Card Fees: 2.90% (15 minutes delivery time)</p>
+                    <p class="text-sm text-gray-400">Bank Transfers Fees: 1.49% (1-2 business days)</p>
+                    <div class="mt-3">
+                        <img src="https://placehold.co/100x30/1a1a1a/00cc66?text=Ramp" alt="Ramp Network logo with green color scheme" class="h-8">
+                    </div>
+                </div>
+
+                <!-- Coinmerce -->
+                <div class="bg-[#1a1a1a] rounded-lg p-4 mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Coinmerce</h3>
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                    <p class="text-sm text-gray-400">Card Fees: 3.50% (15 minutes delivery time)</p>
+                    <p class="text-sm text-gray-400">Bank Transfers Fees: 0 (1-2 business days)</p>
+                    <div class="mt-3">
+                        <img src="https://placehold.co/100x30/1a1a1a/ffffff?text=Coinmerce" alt="Coinmerce logo in white text" class="h-8">
+                    </div>
+                </div>
+
+                <!-- CoinSpot -->
+                <div class="bg-[#1a1a1a] rounded-lg p-4 mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">CoinSpot</h3>
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                    <p class="text-sm text-gray-400">Card Fees: 3.50% (15 minutes delivery time)</p>
+                    <p class="text-sm text-gray-400">Bank Transfers Fees: 0.1-1% (1-2 business days)</p>
+                    <div class="mt-3">
+                        <img src="https://placehold.co/100x30/1a1a1a/ff3333?text=CoinSpot" alt="CoinSpot logo with red color scheme" class="h-8">
+                    </div>
+                </div>
+
+                <!-- Tokero -->
+                <div class="bg-[#1a1a1a] rounded-lg p-4 mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Tokero</h3>
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                    <p class="text-sm text-gray-400">Bank Transfers Fees: 1% (1-2 business days)</p>
+                    <div class="mt-3">
+                        <img src="https://placehold.co/100x30/1a1a1a/ffffff?text=TOKERO" alt="TOKERO logo in white text" class="h-8">
+                    </div>
+                </div>
+
+                <!-- Tradesilvania -->
+                <div class="bg-[#1a1a1a] rounded-lg p-4 mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Tradesilvania</h3>
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                    <p class="text-sm text-gray-400">Card Fees: 0.1-1% (15 minutes delivery time)</p>
+                    <p class="text-sm text-gray-400">Bank Transfers Fees: 0.1-1% (1-2 business days)</p>
+                    <div class="mt-3">
+                        <img src="https://placehold.co/100x30/1a1a1a/00cc00?text=Tradesilvania" alt="Tradesilvania logo with green color scheme" class="h-8">
+                    </div>
+                </div>
+
+                <!-- Indacoin -->
+                <div class="bg-[#1a1a1a] rounded-lg p-4 mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Indacoin</h3>
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                    <p class="text-sm text-gray-400">Card Fees: 4.50% (15 minutes delivery time)</p>
+                    <div class="mt-3">
+                        <img src="https://placehold.co/100x30/1a1a1a/ffffff?text=INDACOIN" alt="INDACOIN logo in white text" class="h-8">
+                    </div>
+                </div>
+
+                <!-- Crypto Coin Pro -->
+                <div class="bg-[#1a1a1a] rounded-lg p-4 mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Crypto Coin Pro</h3>
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                    <p class="text-sm text-gray-400">Card Fees: 4% (15 minutes delivery time)</p>
+                    <p class="text-sm text-gray-400">Bank Transfers Fees: 2% (1-2 business days)</p>
+                    <div class="mt-3">
+                        <img src="https://placehold.co/100x30/1a1a1a/cccccc?text=CryptoCoinPro" alt="CryptoCoinPro logo in gray text" class="h-8">
+                    </div>
+                </div>
+
+                <!-- Changelly -->
+                <div class="bg-[#1a1a1a] rounded-lg p-4 mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold">Changelly</h3>
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                    <p class="text-sm text-gray-400">Card Fees: 5% (15 minutes delivery time)</p>
+                    <div class="mt-3">
+                        <img src="https://placehold.co/100x30/1a1a1a/00cc66?text=changelly" alt="Changelly logo with green color scheme" class="h-8">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-6 text-gray-400 text-sm">
+        <p>Made with ❤️ by the MetalinX team.</p>
+    </footer>
+</body>
+</html>

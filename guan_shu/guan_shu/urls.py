@@ -14,6 +14,7 @@ urlpatterns = [
     path('accounts/login/', accounts_views.login_view, name='login'),
     path('accounts/logout/', accounts_views.logout_view, name='logout'),
     path('metalinx/', markets_views.multiversex, name='multiversex'),
+    path('metalinx/buy/', markets_views.multiversex_buy, name='multiversex'),
     path('explorer_metalinx/', markets_views.explorer_solana, name='explorer_solana'),
 ]
 
