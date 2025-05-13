@@ -22,3 +22,6 @@ def market_detail(request, pk):
 
 def multiversex(request):
     return render(request, 'multiversex.html')
+
+def explorer_solana(request):
+    return render(request, 'explorer_solana.html')
